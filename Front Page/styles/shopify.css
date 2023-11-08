@@ -67,6 +67,10 @@ body {
   transition: 0.3s;
 }
 
+.one{
+  background-color: rgb(196, 231, 191);
+}
+
 .one:hover{
   background-color: #e7e2e2;
 }
@@ -158,4 +162,48 @@ header section {
   width: 200px;
   font-size: 15px;
   color: white;
+}
+
+.overlay{
+  position: absolute;
+  top:0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hidden{
+  display:none;
+}
+
+.story{
+  z-index: 10;
+  position: absolute;
+  top: 25%;
+  left: 24%;
+  border-radius: 18px;
+  height: 492px;
+  width: 873.333px;
+}
+
+.close-button{
+  z-index: 15;
+  position: fixed;
+  right:70px;
+  bottom: 165px;
+
+  border:none;
+  border-radius: 5px;
+  background-color: rgba(4, 0, 0, 0.564);
+  color: white;
+  padding: 5px;
+  font-size: 1.4rem;
+  width: 35px;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.h2-mark {
+  background-color: rgb(131, 196, 249);
 }
