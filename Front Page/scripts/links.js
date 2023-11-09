@@ -13,6 +13,8 @@ const overlayScreen = document.querySelector('.overlay');
 const video = document.querySelector('.story');
 const closeButton = document.querySelector('.close-button');
 
+
+// Shopify button, once clicked will have the overlay appear,video play & appear
 function activatedButton() {
   storyButton.addEventListener('click',()=> {
     overlayScreen.classList.remove('hidden')
@@ -21,11 +23,15 @@ function activatedButton() {
   });
 }
 
+// Once Overlay is clicked, video will be minimized
+
 overlayScreen.addEventListener('click', ()=> {
   minimizedScreen();
   overlayScreen.classList.add('hidden')
 });
 activatedButton();
+
+// Once overlay is clicked video will shrink & close button will appear
 function minimizedScreen() {
   video.style.position = "fixed";
   video.style.top = "750px";
@@ -36,8 +42,19 @@ function minimizedScreen() {
   closeButton.classList.remove('hidden')
 };
 
-closeButton.addEventListener('click', () => {
-  video.remove();
-  closeButton.classList.add('hidden');
-});
+// Centers video
+function centerVideo() {
+  video.style.position = "absolute";
+  video.style.top = "25%";
+  video.style.left = "24%";
+  video.style.height = "492px";
+  video.style.width = "873.333px";
+}
 
+// Close button clicked, pauses video, hides video and centers 
+closeButton.addEventListener('click', () => {
+  video.pause();
+  closeButton.classList.add('hidden');
+  video.classList.add('hidden');
+  centerVideo()
+});
