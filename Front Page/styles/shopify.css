@@ -207,3 +207,9 @@ header section {
 .h2-mark {
   background-color: rgb(131, 196, 249);
 }
+
+.worldwide{
+  height: 492px;
+  width: 450px;
+  object-fit:cover ;
+}
