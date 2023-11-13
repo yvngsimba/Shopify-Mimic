@@ -68,7 +68,7 @@ body {
 }
 
 .one{
-  background-color: rgb(196, 231, 191);
+  background-color: #f7c383;
 }
 
 .one:hover{
@@ -205,11 +205,119 @@ header section {
 }
 
 .h2-mark {
-  background-color: rgb(131, 196, 249);
+  background: linear-gradient(to right, #ff6f61, #ffb861, #ffd965, #ffe87b);
 }
 
 .worldwide{
-  height: 492px;
-  width: 450px;
+  height: 500px;
+  width: 550px;
   object-fit:cover ;
 }
+
+.shopify-data-container{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.dash{margin-top: 5px;
+  display: inline;
+}
+
+.leading-heading {
+  font-family: kanit;
+  font-size: 42px;
+  width: 745px;
+  margin-top: 0;
+}
+
+.header-data mark{
+  font-weight: 100;
+}
+
+.data {
+  width:900px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data span {
+  font-family: kanit;
+  font-size: 3rem;
+}
+
+.data div {
+  color: grey;
+  font-size: 1.25rem;
+}
+
+.data section{
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 5rem;
+  width: 400px;
+}
+
+.data section::before {
+  height: 100px;
+  width: 5px;
+
+  content: ''; 
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  background: linear-gradient(to bottom, #ff6f61, #ffb861, #ffd965, #ffe87b);
+  border-radius: 10px;
+}
+
+/* aside panel */
+
+.aside-title {
+  text-transform:uppercase ;
+  margin-left: 130px;
+  margin-top: 80px;
+}
+
+.community-container {
+  margin-left: 100px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+} 
+
+.community-container img{
+  width: 55px;
+  aspect-ratio: 1;
+  margin: 15px;
+  display: block;
+}
+
+.community-container section{
+  width: 337px;
+  height: 216px;
+  background-color: whitesmoke;
+  border: 1px solid rgb(171, 170, 170);
+  border-radius: 8px;cursor: pointer;
+}
+
+.arrow{
+  display: inline;
+  visibility: hidden;
+}
+
+.sec:hover .arrow{
+  visibility: visible;
+  transition: right 1s ease-in-out;
+}
+
+.community-container p, .community-container span {
+  margin-left: 25px;
+  font-family: kanit;
+  font-size: 1.1rem;
+}
+
+.community-container p{
+  color: grey;
+}
+
