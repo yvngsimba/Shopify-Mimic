@@ -301,20 +301,34 @@ header section {
   border-radius: 8px;cursor: pointer;
 }
 
+.arrow-text-container{
+  
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
 .arrow{
+  font-size: 1.5rem;
   display: inline;
-  visibility: hidden;
+  opacity: 0;
+}
+
+.community-container span{
+  font-size: 1.8rem;
+  margin-left: 25px;
+  font-family: kanit;
 }
 
 .sec:hover .arrow{
-  visibility: visible;
-  transition: right 1s ease-in-out;
+  opacity: 1;
+  margin-left: 5px;
+  transition: opacity 0.5s ease-in-out,  margin-left 0.6s ease-in-out;
 }
 
 .community-container p, .community-container span {
   margin-left: 25px;
   font-family: kanit;
-  font-size: 1.1rem;
 }
 
 .community-container p{
