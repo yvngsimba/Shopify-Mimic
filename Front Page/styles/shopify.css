@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
 }
 
 .wrapper-background{
@@ -284,6 +285,7 @@ header section {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 100px;
 } 
 
 .community-container img{
@@ -296,7 +298,7 @@ header section {
 .community-container section{
   width: 337px;
   height: 216px;
-  background-color: whitesmoke;
+  background-color: white;
   border: 1px solid rgb(171, 170, 170);
   border-radius: 8px;cursor: pointer;
 }
@@ -326,6 +328,12 @@ header section {
   transition: opacity 0.5s ease-in-out,  margin-left 0.6s ease-in-out;
 }
 
+.sec .arrow{
+  opacity: 0;
+  margin-left: 0;
+  transition: opacity 0.5s ease-in-out,  margin-left 0.6s ease-in-out;
+}
+
 .community-container p, .community-container span {
   margin-left: 25px;
   font-family: kanit;
@@ -335,3 +343,19 @@ header section {
   color: grey;
 }
 
+.market-build-container{
+  background-color: rgba(240, 240, 240, 0.918);
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  font-family: kanit;
+}
+
+.market-build-container span{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.market-build-container h1{
+  font-size: 3rem;
+}

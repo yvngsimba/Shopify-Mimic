@@ -58,3 +58,39 @@ closeButton.addEventListener('click', () => {
   video.classList.add('hidden');
   centerVideo()
 });
+//Window links for panels
+const plusLink = document.querySelector('.plus');
+
+plusLink.addEventListener('click', () => {
+  window.location.href = "https://www.shopify.com/ca/plus"
+});
+
+const partnersLink = document.querySelector('.partners');
+
+partnersLink.addEventListener('click', () => {
+  window.location.href = "https://www.shopify.com/ca/partners"
+});
+
+const developersLink = document.querySelector('.developers');
+
+developersLink.addEventListener('click', () => {
+  window.location.href = "https://shopify.dev/"
+});
+
+const creatorsLink = document.querySelector('.creators');
+
+creatorsLink.addEventListener('click', () => {
+  window.location.href = "https://www.shopify.com/ca/creators"
+});
+// Build your site video
+
+const buildVideo = document.querySelector('.site');
+
+buildVideo.addEventListener('mouseover', () => {
+  buildVideo.pause();
+});
+
+buildVideo.addEventListener('mouseout', () => {
+  buildVideo.play();
+});
+
