@@ -359,3 +359,25 @@ header section {
 .market-build-container h1{
   font-size: 3rem;
 }
+
+/* Moving Buttons */
+
+.market-build-container section {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.slide {
+  width: 347px;
+  height: 2px;
+  background: rgb(208, 207, 207);
+  border: none;
+  margin-bottom: 500px;
+  cursor: pointer;
+  transition: background 1s ease-in-out;
+}
+
+.slide:hover{
+  background: linear-gradient(to right,  #ff6f61, #ffb861, #ffd965, #ffe87b);
+}
